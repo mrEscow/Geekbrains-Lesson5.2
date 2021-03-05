@@ -1,4 +1,8 @@
 #pragma once
+namespace Event{
+int event = 0;
+bool exit = 0;
+}
 namespace D_init {
     enum class Color
     {
@@ -41,6 +45,9 @@ namespace Init {
     int arr_9[SIZE_3] = { -2,2,0,2,-2 };
     // 4
     int N = -1;
+    const int SIZE_4 = 8;
+    int arr_10[SIZE_4] = { 0,1,2,3,4,5,6,7 };
     // 5
-    int nightmare = -1;
+    int nightmare = 2;
+    Pair arr_X(0);
 }
