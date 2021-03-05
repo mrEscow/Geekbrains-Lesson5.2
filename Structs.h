@@ -6,8 +6,12 @@ struct Pair {
     int* arr = new int;
 
 
-    Pair(int n, ...) {
+    Pair() {
 
+    }
+
+    ~Pair() {
+        delete[] arr;
     }
 
     void create_Not_Bool_Arrey(int n, ...) {

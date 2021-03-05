@@ -49,5 +49,5 @@ namespace Init {
     int arr_10[SIZE_4] = { 0,1,2,3,4,5,6,7 };
     // 5
     int nightmare = 2;
-    Pair arr_X(0);
+    Pair arr_X;
 }
