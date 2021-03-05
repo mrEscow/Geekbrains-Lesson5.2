@@ -12,18 +12,11 @@ int main() {
     DISPLAY::displayTextColor((int)D_init::Color::Yellow);
     DISPLAY::displaySize(D_init::Width, D_init::height);
     //---------------------------------------------------------------------------------
-
     Task::func_void_1[0] = Task::foo_1;
     Task::func_void_1[1] = Task::foo_2;
-
-
     Task::func_bool = Task::foo_3;
-
-
     Task::func_void_2 = Task::foo_4;
-    //---------------------------------------------------------------------------------
-    
-    
+    //---------------------------------------------------------------------------------     
     while (!Event::exit) {
         std::cout << " 1 2 3 4 5 6 0-выход " << std::endl;
         std::cin >> Event::event;
