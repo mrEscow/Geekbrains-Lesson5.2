@@ -12,15 +12,15 @@ int main() {
     DISPLAY::displayTextColor((int)D_init::Color::Yellow);
     DISPLAY::displaySize(D_init::Width, D_init::height);
     //---------------------------------------------------------------------------------
-    void (*func_void_1[2])(int array[], int size);
-    func_void_1[0] = Task::foo_1;
-    func_void_1[1] = Task::foo_2;
 
-    bool (*func_bool)(int array[], int size);
-    func_bool = Task::foo_3;
+    Task::func_void_1[0] = Task::foo_1;
+    Task::func_void_1[1] = Task::foo_2;
 
-    void (*func_void_2)(int array[], int size, int n);
-    func_void_2 = Task::foo_4;
+
+    Task::func_bool = Task::foo_3;
+
+
+    Task::func_void_2 = Task::foo_4;
     //---------------------------------------------------------------------------------
     
     
@@ -38,7 +38,7 @@ int main() {
 
         PRINT::print_Array(Init::arr_1, Init::SIZE_1);
         //Task::foo_1(Init::arr_1, Init::SIZE_1);
-        func_void_1[0](Init::arr_1, Init::SIZE_1);
+        Task::func_void_1[0](Init::arr_1, Init::SIZE_1);
         PRINT::print_Array(Init::arr_1, Init::SIZE_1);
 
         PRINT::print_End_Messeng();
@@ -50,7 +50,7 @@ int main() {
 
         PRINT::print_Array(Init::arr_2, Init::SIZE_2);
         //Task::foo_2(Init::arr_2, Init::SIZE_2);
-        func_void_1[1](Init::arr_2, Init::SIZE_2);
+        Task::func_void_1[1](Init::arr_2, Init::SIZE_2);
         PRINT::print_Array(Init::arr_2, Init::SIZE_2);
 
         PRINT::print_End_Messeng();
@@ -62,31 +62,31 @@ int main() {
 
         PRINT::print_Array(Init::arr_3, Init::SIZE_3);
         //PRINT::print_bool(Task::foo_3(Init::arr_3, Init::SIZE_3));
-        PRINT::print_bool(func_bool(Init::arr_3, Init::SIZE_3));
+        PRINT::print_bool(Task::func_bool(Init::arr_3, Init::SIZE_3));
 
         PRINT::print_Array(Init::arr_4, Init::SIZE_3);
         //PRINT::print_bool(Task::foo_3(Init::arr_4, Init::SIZE_3));
-        PRINT::print_bool(func_bool(Init::arr_4, Init::SIZE_3));
+        PRINT::print_bool(Task::func_bool(Init::arr_4, Init::SIZE_3));
 
         PRINT::print_Array(Init::arr_5, Init::SIZE_3);
         //PRINT::print_bool(Task::foo_3(Init::arr_5, Init::SIZE_3));
-        PRINT::print_bool(func_bool(Init::arr_5, Init::SIZE_3));
+        PRINT::print_bool(Task::func_bool(Init::arr_5, Init::SIZE_3));
 
         PRINT::print_Array(Init::arr_6, Init::SIZE_3);
         //PRINT::print_bool(Task::foo_3(Init::arr_6, Init::SIZE_3));
-        PRINT::print_bool(func_bool(Init::arr_6, Init::SIZE_3));
+        PRINT::print_bool(Task::func_bool(Init::arr_6, Init::SIZE_3));
 
         PRINT::print_Array(Init::arr_7, Init::SIZE_3);
         //PRINT::print_bool(Task::foo_3(Init::arr_7, Init::SIZE_3));
-        PRINT::print_bool(func_bool(Init::arr_7, Init::SIZE_3));
+        PRINT::print_bool(Task::func_bool(Init::arr_7, Init::SIZE_3));
 
         PRINT::print_Array(Init::arr_8, Init::SIZE_3);
         //PRINT::print_bool(Task::foo_3(Init::arr_8, Init::SIZE_3));
-        PRINT::print_bool(func_bool(Init::arr_8, Init::SIZE_3));
+        PRINT::print_bool(Task::func_bool(Init::arr_8, Init::SIZE_3));
 
         PRINT::print_Array(Init::arr_9, Init::SIZE_3);
         //PRINT::print_bool(Task::foo_3(Init::arr_9, Init::SIZE_3));
-        PRINT::print_bool(func_bool(Init::arr_9, Init::SIZE_3));
+        PRINT::print_bool(Task::func_bool(Init::arr_9, Init::SIZE_3));
 
         PRINT::print_End_Messeng();
         //system("pause");
@@ -97,7 +97,7 @@ int main() {
 
         PRINT::print_Array(Init::arr_10, Init::SIZE_4);
         //Task::foo_4(Init::arr_2, Init::SIZE_2, Init::N);
-        func_void_2(Init::arr_10, Init::SIZE_4, Init::N);
+        Task::func_void_2(Init::arr_10, Init::SIZE_4, Init::N);
         PRINT::print_Array(Init::arr_10, Init::SIZE_4);
 
         PRINT::print_End_Messeng();

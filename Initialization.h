@@ -1,7 +1,7 @@
 #pragma once
 namespace Event{
-int event = 0;
-bool exit = 0;
+    int event = 0;
+    bool exit = 0;
 }
 namespace D_init {
     enum class Color
